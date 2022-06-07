@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RectanguloActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lblNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre: "
+            android:textSize="25dp"
+            android:gravity="left"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/lblAltura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Altura: "
+            android:textSize="22dp"
+            android:gravity="left"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/lblBase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Base: "
+            android:textSize="22dp"
+            android:gravity="left"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Que deseas calcular?"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="@color/black">
+        </TextView>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rdbtnArea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Area"
+                android:textSize="20dp"
+                android:layout_marginLeft="5dp">
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/rdbtnPerimetro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Perimetro"
+                android:textSize="20dp"
+                android:layout_marginLeft="5dp">
+            </RadioButton>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/mostrarResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:text="">
+        </TextView>
+
+        <Button
+            android:id="@+id/btnCalcular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="150dp"
+            android:text="Calcular">
+        </Button>
+
+        <Button
+            android:id="@+id/btnRegresar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Regresar">
+        </Button>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
